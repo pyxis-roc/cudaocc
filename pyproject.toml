@@ -1,0 +1,10 @@
+[project]
+name = "cudaocc"
+version = "0.0.1"
+authors = [ { name = "Sreepathi Pai", email = "sree@cs.rochester.edu" } ]
+description = "Python interface to cuda_occupancy.h"
+license = "MIT"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
