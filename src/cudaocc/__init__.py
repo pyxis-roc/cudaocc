@@ -104,6 +104,8 @@ _cudaocc.myOccMaxPotentialOccupancyBlockSize.argtypes = [POINTER(c_int), POINTER
 # NVIDIA RTX A2000 12GB
 SM_86 = cudaOccDeviceProp(computeMajor=8, computeMinor=6, maxThreadsPerBlock=1024, maxThreadsPerMultiprocessor=1536, regsPerBlock=65536, regsPerMultiprocessor=65536, warpSize=32, sharedMemPerBlock=49152, sharedMemPerMultiprocessor=102400, numSms=26, sharedMemPerBlockOptin=101376, reservedSharedMemPerBlock=1024)
 
+ALL_SMS = [SM_86]
+
 def getMaxComputeMajor():
     return _cudaocc.getMaxComputeMajor()
 
