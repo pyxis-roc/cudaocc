@@ -104,8 +104,8 @@ _cudaocc.myOccMaxPotentialOccupancyBlockSize.argtypes = [POINTER(c_int), POINTER
 # NVIDIA RTX A2000 12GB
 SM_86 = cudaOccDeviceProp(computeMajor=8, computeMinor=6, maxThreadsPerBlock=1024, maxThreadsPerMultiprocessor=1536, regsPerBlock=65536, regsPerMultiprocessor=65536, warpSize=32, sharedMemPerBlock=49152, sharedMemPerMultiprocessor=102400, numSms=26, sharedMemPerBlockOptin=101376, reservedSharedMemPerBlock=1024)
 
-SM_120 = # NVIDIA GeForce RTX 5090
-cudaOccDeviceProp(computeMajor=12, computeMinor=0, maxThreadsPerBlock=1024, maxThreadsPerMultiprocessor=1536, regsPerBlock=65536, regsPerMultiprocessor=65536, warpSize=32, sharedMemPerBlock=49152, sharedMemPerMultiprocessor=102400, numSms=170, sharedMemPerBlockOptin=101376, reservedSharedMemPerBlock=1024)
+# NVIDIA GeForce RTX 5090
+SM_120 = cudaOccDeviceProp(computeMajor=12, computeMinor=0, maxThreadsPerBlock=1024, maxThreadsPerMultiprocessor=1536, regsPerBlock=65536, regsPerMultiprocessor=65536, warpSize=32, sharedMemPerBlock=49152, sharedMemPerMultiprocessor=102400, numSms=170, sharedMemPerBlockOptin=101376, reservedSharedMemPerBlock=1024)
 
 ALL_SMS = [SM_86, SM_120]
 
